@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+    $primary-color:#122223;
+    $primary-color-rgb:18, 34, 35;
+    $secondry-color:#F9DABA;
+    $secondry-color-rgb:249, 218, 186;
+    $secondry-color-100:#F9F5F0;
+    $secondry-color-rgb-100:249, 245, 240;
+    $black-color:#000000;
+    $black-color-rgb:0, 0, 0;
+    $white-color:#ffffff;
+    $white-color-rgb:255, 255, 255;
+    $text-color:#A2A7A7;
+    $font-size:16px;
+    $font-cm:'Cormorant Garamond';
+    $font-jost:'jost';
+    $font-weight:500px;
+    $line-height: 1.5;
+    $gutter-width:15px;
+
+:root{
+    --primary: #{$primary-color};
+    --primary-rgb: #{$primary-color-rgb};
+    --secondry: #{$secondry-color};
+    --secondry-rgb: #{$secondry-color-rgb};
+    --secondry-100: #{$secondry-color-100};
+    --secondry-rgb-100: #{$secondry-color-rgb-100};
+    --black: #{$black-color};
+    --black-rgb: #{$black-color-rgb};
+    --white: #{$white-color};
+    --white-rgb: #{$white-color-rgb};
+    --text: #{$text-color};
+    --font-size: #{$font-size};
+    --font-cm: #{$font-cm};
+    --font-jost: #{$font-jost};
+    --font-weight: #{$font-weight};
+    --line-height: #{$line-height};
+    --gutter-width: #{$gutter-width};
+}

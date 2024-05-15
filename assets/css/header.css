@@ -1,0 +1,44 @@
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.pre-header {
+  padding: 40px 60px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.pre-header .menu, .pre-header .contact, .pre-header .book, .pre-header .en {
+  font-family: var(--font-jost);
+  vertical-align: middle;
+  color: var(--white);
+  font-size: 20px;
+  font-size: 16px;
+}
+.pre-header .menu span {
+  margin-left: 18px;
+}
+.pre-header .contact {
+  text-align: center;
+}
+.pre-header .contact span {
+  margin-left: 16px;
+}
+.pre-header .menu i, .pre-header .contact i {
+  font-size: 16px;
+}
+.pre-header .header-logo img {
+  margin: -10px auto;
+}
+.pre-header .en {
+  text-align: center;
+  vertical-align: middle;
+}
+.pre-header .en i {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.pre-header .book-room {
+  text-align: right;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #122223;
+  --primary-rgb: 18, 34, 35;
+  --secondry: #F9DABA;
+  --secondry-rgb: 249, 218, 186;
+  --secondry-100: #F9F5F0;
+  --secondry-rgb-100: 249, 245, 240;
+  --black: #000000;
+  --black-rgb: 0, 0, 0;
+  --white: #ffffff;
+  --white-rgb: 255, 255, 255;
+  --text: #A2A7A7;
+  --font-size: 16px;
+  --font-cm: Cormorant Garamond;
+  --font-jost: jost;
+  --font-weight: 500px;
+  --line-height: 1.5;
+  --gutter-width: 15px;
+}/*# sourceMappingURL=base.css.map */

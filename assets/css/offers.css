@@ -1,0 +1,92 @@
+.offers {
+  padding-top: 200px;
+}
+.offers .heading {
+  color: var(--black);
+  display: flex;
+}
+.offers .heading span {
+  font-family: var(--font-jost);
+}
+.offers .heading h1 {
+  font-size: 64px;
+  font-family: var(--font-cm);
+}
+.offers .book-now {
+  margin-top: 50px;
+}
+.offers .book-now span {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+.offers .offers-item {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.offers .offers-img img {
+  width: 380px;
+  height: 487px;
+}
+.offers .offers-img-t {
+  margin-left: 50px;
+}
+.offers .offers-img-s {
+  margin-left: 20px;
+}
+.offers .offer-text, .offers .offer-date {
+  font-size: 18px;
+  font-family: var(--font-jost);
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+.offers .offer-date {
+  padding: 0px 8px;
+}
+.offers .offer-text a, .offers .offer-date a {
+  color: var(--black);
+}
+.offers .offer-tagline {
+  font-size: 30px;
+}
+.offers .offer-tagline span {
+  font-family: var(--font-cm);
+  font-weight: 500;
+}
+.offers .read {
+  margin-top: 20px;
+}
+.offers .read span {
+  font-family: var(--font-jost);
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.title-o {
+  text-align: center;
+}
+.title-o span {
+  margin-bottom: 8px;
+  font-family: var(--font);
+}
+.title-o h2 {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.hotel-f {
+  margin-top: 80px;
+}
+.hotel-f .hotel {
+  padding: 0px 30px;
+}
+.hotel-f .hotel img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.hotel-f .hotel span {
+  font-size: 24px;
+  text-align: center;
+}/*# sourceMappingURL=offers.css.map */

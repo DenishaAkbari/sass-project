@@ -1,0 +1,55 @@
+.explore{
+    background-color: var(--primary);
+    padding-top:200px;
+        .heading{
+            color: var(--white);
+            display: flex;
+                span{
+                    font-family: var(--font-jost);
+                }
+                h1{
+                    font-size: 64px;
+                    font-family: var(--font-cm);
+                }
+        }
+        .book-now{
+            margin-top: 50px;
+        }
+        .book-now span{
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+        .explore-content{
+            margin-top: 100px;
+        }
+        .explore-content img{
+            width: 770px;
+            height: 648px;
+        }
+        .white-round{
+            width: 6px;
+            height: 6px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin: 7px 10px;
+        }
+        .explore-item{
+            gap: 30px;
+        }
+        .e-text{
+            color: var(--white);
+            margin-top: 30px;
+        }
+        .e-text h1{
+            font-size:40px;
+        }
+        .e-text span{
+            font-family: var(--font-jost);
+            margin-top: 15px;
+            font-size: 17px;
+        }
+        .people{
+            color: var(--white);
+            font-family: var(--font-jost);
+        }
+}

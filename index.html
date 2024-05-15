@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>swiss resort</title>
+    <!-- fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.scss">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- base-css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- structure -->
+    <link rel="stylesheet" href="assets/css/structure.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- header -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <!-- banner -->
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <!-- book-now -->
+    <link rel="stylesheet" href="assets/css/book.css">
+    <!-- explore -->
+    <link rel="stylesheet" href="assets/css/explore.css">
+    <!-- layout -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <!-- Swiss Resort  -->
+    <link rel="stylesheet" href="assets/css/Swiss-Resort.css">
+    <!-- testimonials-------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/testimonials.css">
+    <!-- offers -->
+    <link rel="stylesheet" href="assets/css/offers.css">
+    <!-- Experience -->
+    <link rel="stylesheet" href="assets/css/experiance.css">
+    <!-- footer -->
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+    body {
+    background-size:cover;
+    height: 100vh;
+    }
+    header{
+    width: 100%;
+    /* padding: 20px 0px; */
+    cursor: pointer;
+    }
+    .header.fixed-header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        /* padding: 40px 60px; */
+        background-color: rgb(18, 34, 35 ,0.5);
+        backdrop-filter: blur(5px);
+        z-index: 999;
+        transition: 0.2s linear;
+        /* box-shadow: 0px 5px 40px #d1d1d18f; */
+    }
+    .cursor div {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    }
+    .cursor div:nth-child(1) {
+    background-color: black;
+    z-index: 1;
+    }
+    .cursor div:nth-child(2) {
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid red;
+    
+    }
+    
+.hidden{
+    overflow: hidden;
+}
+.loader{
+    width: 100%;
+    height: 100vh;
+    background-color: #122223;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+.loader img{
+    animation: bounce 0.3s ease-in  infinite alternate;
+    color: black;
+}
+
+@keyframes bounce{
+    0% {
+		transform: rotateX(360deg);
+	}
+	100% {
+		transform: rotateY(-150deg);
+	}   
+}
+</style>
+<body class="hidden">
+    <div class='cursor'>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="loader">
+        <img src="assets/img/header/logo-header-1.svg" alt="">
+    </div>
+    <header class="header">
+        <nav>
+            <div class="pre-header d-flex">
+                <div class="w-1">
+                    <div class="menu">
+                        <i class="fa-solid fa-bars"></i>
+                        <span>MENU</span>
+                    </div>
+                </div>
+                <div class="w-2">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+41-96567-7854</span>
+                    </div>
+                </div>
+                <div class="w-6">
+                    <div class="header-logo">
+                        <img src="assets/img/header/logo-header-1.svg" alt="logo">
+                    </div>
+                </div>
+                <div class="w-1">
+                    <div class="en">
+                        <span>EN</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="w-2">
+                    <div class="book-room">
+                        <div class="book">
+                            <span>BOOK YOUR STAY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="up-button">
+            <a href="#">
+                <i class="fa-solid fa-arrow-down-long"></i>
+            </a>
+        </div>
+        <!-- banner -->
+        <section class="banner"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="container">
+                <div class="row ">
+                    <div class="w-12">
+                        <div class="banner-content">
+                            <span>STAY WITH US FEEL LIKE HOME</span>
+                            <h1>Experience Unparalleled <br>Comfort</h1>
+                        </div>
+                        <div class="banner-from">
+                            <a href="#">
+                                Check In - Check Out
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </a>
+                            <div class="banner-border"></div>
+                            <div class="rooms">
+                                <a href="#">
+                                    <span>Rooms</span>
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </a>    
+                            </div>
+                            <div class="banner-border"></div>
+                            <div class="rooms">
+                                <a href="#">
+                                    <span>Guests</span>
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </a>    
+                            </div>
+                            <div class="go-btn">
+                                <a href="#">GO</a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- book-now -->
+        <section>
+            <div class="container">
+                <div class="title pt-100" data-aos="fade-up" data-aos-duration="3000">
+                    <span>SWISS RESORT LUXURY HOTEL</span>
+                    <h1>Enjoy a Luxury Experience</h1>
+                </div>
+                <div class="row pb-200">
+                    <div class="w-6" data-aos="fade-right" data-aos-duration="3000">
+                        <div class="book-content">
+                            <p>Welcome to the best five-star deluxe hotel in New York. Hotel <br> elementum sesue the aucan vestibulum aliquam justo in <br>sapien rutrum volutpat. Donec in quis the pellentesque velit. <br>Hotel ut nisl quam nestibulum.</p>
+                            <div class="button d-flex">
+                                <svg width="50" class="d-flex" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35.8 28.0924C43.3451 28.0924 49.4616 21.9759 49.4616 14.4308C49.4616 6.88577 43.3451 0.769287 35.8 0.769287C28.255 0.769287 22.1385 6.88577 22.1385 14.4308C22.1385 21.9759 28.255 28.0924 35.8 28.0924Z" stroke="#122223"></path>
+                                    <path d="M33.4808 10.2039L32.9985 10.8031L37.2931 14.2623H0.341553V15.0315H37.28L33.0008 18.4262L33.4785 19.0285L39 14.6492L33.4808 10.2039Z" fill="#122223"></path>
+                                </svg>
+                                <span>Book Now</span>
+                            </div>
+                        </div>
+                        <div class="book-side-img">
+                            <img src="assets/img/book/room.img" alt="">
+                        </div>
+                    </div>
+                    <div class="w-6" data-aos="fade-left" data-aos-duration="3000">
+                        <div class="book-img">
+                            <img src="assets/img/book/book.img" alt="">
+                            <img src="assets/img/book/room.img2.png" alt="" class="room">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- explore -->
+        <section class="explore pb-200">
+            <div class="container">
+                <div class="heading d-flex justify-content-between">
+                    <div class="m-title">
+                        <span>EXPLORE</span>
+                        <h1>Rooms & Suites</h1>
+                    </div>
+                    <div class="book-now d-flex align-items-center">
+                        <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.8 28.0924C43.3451 28.0924 49.4616 21.9759 49.4616 14.4308C49.4616 6.88577 43.3451 0.769287 35.8 0.769287C28.255 0.769287 22.1385 6.88577 22.1385 14.4308C22.1385 21.9759 28.255 28.0924 35.8 28.0924Z" stroke="#FFF"></path>
+                            <path d="M33.4808 10.2039L32.9985 10.8031L37.2931 14.2623H0.341553V15.0315H37.28L33.0008 18.4262L33.4785 19.0285L39 14.6492L33.4808 10.2039Z" fill="#FFF"></path>
+                        </svg>
+                        <span>BOOK NOW</span>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-item d-flex">
+                <div class="explore-content ml-291">
+                    <img src="assets/img/exlore/explore1.png" alt=""  data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="1000">
+                    <div class="e-text d-flex align-items-center justify-content-between" data-aos="fade-up"  data-aos-duration="1000">
+                        <h1>Luxury Suite</h1>
+                        <span>$499 / NIGHT</span>
+                    </div>
+                    <div class="people d-flex" data-aos="fade-up"  data-aos-duration="1000">
+                        <div>30M2</div>
+                        <div>
+                            <div class="white-round"></div>
+                        </div>
+                        <div>2 ADULTS</div>
+                        <div>
+                            <div class="white-round"></div>
+                        </div>
+                        <div>1 CHILDREN</div>
+                        <div>
+                            <div class="white-round"></div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="explore-content">
+                    <img src="assets/img/exlore/explore2.png" alt=""  data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                    <div class="e-text d-flex align-items-center justify-content-between" data-aos="fade-up"  data-aos-duration="1000">
+                        <h1>Luxury Suite</h1>
+                        <span>$499 / NIGHT</span>
+                    </div>
+                    <div class="people d-flex" data-aos="fade-up"  data-aos-duration="1000" >
+                        <div>30M2</div>
+                        <div>
+                            <div class="white-round"></div>
+                        </div>
+                        <div>2 ADULTS</div>
+                        <div>
+                            <div class="white-round"></div>
+                        </div>
+                        <div>1 CHILDREN</div>
+                        <div>
+                            <div class="white-round"></div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+              
+        </section>
+        <!-- layout -->
+        <section class="layout pt-100 pt-100  pb-200">
+            <img src="assets/img/layout/layout2.png" class="layout-side-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+            <div class="container">
+                <div class="row">
+                    <div class="w-6">
+                        <div class="layout-items">
+                            <div class="layout-img">
+                                <img src="assets/img/layout/layout1.png" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-6">
+                        <div class="layout-menu">
+                            <a href="#">The Restaurant</a>
+                            <a href="#">Spa Center</a>
+                            <a href="#">Fitness Centernhy</a>
+                            <a href="#">Swimming Pool</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hotel Facilities---------------------------------------- -->
+        <section class="pt-100">
+            <div class="title-o">
+                <span>OUR SERVICES</span>
+                <h2>Hotel Facilities</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="hotel-f d-flex">
+                        <div class="hotel ">
+                            <div class="facilities"  data-aos="zoom-in" data-aos-duration="1000">
+                                <img src="assets/img/hotel facilitys/wi-fi.png" alt="">
+                                <span>Wifi & Internet</span>
+                            </div>
+                        </div>
+                        <div class="hotel ">
+                            <div class="facilities"  data-aos="zoom-in" data-aos-duration="1000">
+                                <img src="assets/img/hotel facilitys/bus.png" alt="">
+                                <span>Airport Transfer</span>
+                            </div>
+                        </div>
+                        <div class="hotel ">
+                            <div class="facilities"  data-aos="zoom-in" data-aos-duration="1000">
+                                <img src="assets/img/hotel facilitys/smart-tv (1).png" alt="">
+                                <span>Smart TV</span>
+                            </div>
+                        </div>
+                        <div class="hotel ">
+                            <div class="facilities"  data-aos="zoom-in" data-aos-duration="1000">
+                                <img src="assets/img/hotel facilitys/breakfast-in-bed.png" alt="">
+                                <span>Breakfast in Bed</span>
+                            </div>
+                        </div>
+                        <div class="hotel ">
+                            <div class="facilities"  data-aos="zoom-in" data-aos-duration="1000">
+                                <img src="assets/img/hotel facilitys/laundry (1).png" alt="">
+                                <span>Laundry Services</span>
+                            </div>
+                        </div>
+                        <div class="hotel ">
+                            <div class="facilities"  data-aos="zoom-in" data-aos-duration="1000">
+                                <img src="assets/img/hotel facilitys/cleaning-service (1).png" alt="">
+                                <span>Housekeeper Services</span>
+                            </div>
+                        </div>
+                    </div>
+                 </div>   
+            </div>
+        </section>
+        <!-- Swiss Resort -->
+        <section class="pt-100">
+            <div class="d-flex justify-content-between">
+                <img src="assets/img/Resort/Swiss Resort1.png" alt="" data-aos="fade-right">
+                <div class="title Swiss">
+                    <span>MEETING & EVENTS</span>
+                    <h1>A Warm, Exquisite,<br>Practical And <br>Urban Space.</h1>
+                    <a href="#" class="find">FIND OUT MORE</a>
+                </div>
+                <img src="assets/img/Resort/Swiss Resort2.png" alt="" data-aos="fade-left">
+            </div>
+        </section>
+        <!-- climb -->
+        <section class="pt-100 pb-200">
+            <div class="container">
+                <div class="title pt-100">
+                    <span>THERE'S SO MUCH TO DISCOVER</span>
+                    <h1>Unforgettable Experience</h1>
+                </div>
+                <div class="row">
+                    <div class="w-3">
+                        <div class="climb">
+                            <img src="assets/img/climb/climb1.png" >
+                        </div>
+                        <div class="climb-content">
+                            <h4>Bike Rides</h4>
+                            <span>$280/Person</span>
+                        </div>
+                    </div>
+                    <div class="w-3">
+                        <div class="climb">
+                            <img src="assets/img/climb/climb2.png" alt="">
+                        </div>
+                        <div class="climb-content">
+                            <h4>Golf</h4>
+                            <span>$280/Person</span>
+                        </div>
+                    </div>
+                    <div class="w-3">
+                        <div class="climb">
+                            <img src="assets/img/climb/climb3.png" alt="">
+                        </div>
+                        <div class="climb-content">
+                            <h4>Snowsports</h4>
+                            <span>$280/Person</span>
+                        </div>
+                    </div>
+                    <div class="w-3">
+                        <div class="climb">
+                            <img src="assets/img/climb/climb4.png" alt="">
+                        </div>
+                        <div class="climb-content">
+                            <h4>BClimbing</h4>
+                            <span>$280/Person</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="pt-100 testimnials pb-200">
+            <div class="container">
+                <div class="title">
+                    <svg width="45" height="44" style="display: block; margin: 0 auto 
+                    ; padding: 5px" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_428_953)">
+                          <path d="M9.67883 38C6.64234 38 4.27007 36.9524 2.56204 34.8571C0.854015 32.6667 0 29.4286 0 25.1429C0 20.6667 0.99635 16.381 2.98905 12.2857C5.07664 8.19048 8.01825 4.14286 11.8139 0.142864C11.9088 0.0476213 12.0511 0 12.2409 0C12.5255 0 12.7153 0.142858 12.8102 0.428574C13 0.619048 13.0474 0.857143 12.9526 1.14286C10.6752 4.19048 9.10949 7.14286 8.25548 10C7.49635 12.7619 7.11679 15.8571 7.11679 19.2857C7.11679 21.8571 7.44891 23.8571 8.11314 25.2857C8.77737 26.7143 9.67883 28 10.8175 29.1429L5.40876 30.1429C5.31387 28.5238 5.74088 27.2857 6.68978 26.4286C7.73358 25.5714 9.06205 25.1429 10.6752 25.1429C12.6679 25.1429 14.1861 25.7143 15.2299 26.8571C16.3686 28 16.938 29.5714 16.938 31.5714C16.938 33.6667 16.2737 35.2857 14.9453 36.4286C13.7117 37.4762 11.9562 38 9.67883 38ZM31.5985 38C28.562 38 26.1898 36.9524 24.4818 34.8571C22.8686 32.6667 22.062 29.4286 22.062 25.1429C22.062 20.5714 23.0584 16.2381 25.0511 12.1429C27.0438 8.04762 29.9854 4.04762 33.8759 0.142864C33.9708 0.0476213 34.1131 0 34.3029 0C34.5876 0 34.7774 0.142858 34.8723 0.428574C35.062 0.619048 35.1095 0.857143 35.0146 1.14286C32.7372 4.19048 31.1715 7.14286 30.3175 10C29.5584 12.7619 29.1788 15.8571 29.1788 19.2857C29.1788 21.8571 29.4635 23.9048 30.0328 25.4286C30.6971 26.8571 31.5985 28.0952 32.7372 29.1429L27.4708 30.1429C27.3759 28.5238 27.8029 27.2857 28.7518 26.4286C29.7007 25.5714 31.0292 25.1429 32.7372 25.1429C34.7299 25.1429 36.2482 25.7143 37.292 26.8571C38.4307 28 39 29.5714 39 31.5714C39 33.6667 38.3358 35.2857 37.0073 36.4286C35.7737 37.4762 33.9708 38 31.5985 38Z" fill="#122223"></path>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_428_953" x="0" y="0" width="45" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dx="6" dy="6"></feOffset>
+                            <feComposite in2="hardAlpha" operator="out"></feComposite>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_428_953"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_428_953" result="shape"></feBlend>
+                          </filter>
+                        </defs>
+                      </svg>
+                    <span style="margin-top: 50px; display: inline-block; margin-bottom: 0px;">VOICE FROM OUR GUESTS</span>
+                    <h1>Testimonials</h1>
+                    <p>
+                        “Some places are so good to stay in, you don't want to <br>generate a rush on them. The Swiss Resort lodge hotel in <br>London is one of them.”
+                    </p>
+                    <h4>Ali Tufan - Trip Advisor</h4>
+                </div>
+            </div>
+        </section>
+        <!-- offers -->
+        <section class=" offers pb-200">
+            <div class="container">
+                <div class="heading d-flex justify-content-between">
+                    <div class="m-title">
+                        <span>BLOG</span>
+                        <h1>Offers & News</h1>
+                    </div>
+                    <div class="book-now d-flex align-items-center">
+                        <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.8 28.0924C43.3451 28.0924 49.4616 21.9759 49.4616 14.4308C49.4616 6.88577 43.3451 0.769287 35.8 0.769287C28.255 0.769287 22.1385 6.88577 22.1385 14.4308C22.1385 21.9759 28.255 28.0924 35.8 28.0924Z" stroke="#122223"></path>
+                            <path d="M33.4808 10.2039L32.9985 10.8031L37.2931 14.2623H0.341553V15.0315H37.28L33.0008 18.4262L33.4785 19.0285L39 14.6492L33.4808 10.2039Z" fill="#122223"></path>
+                          </svg>
+                        <span>VIEW ALL MORE</span>
+                    </div>
+                </div>
+                <div class="offers-item d-flex pt-100">
+                    <div class="w-4">
+                        <div class="offers-img">
+                            <img src="assets/img/card/card1.png" alt="" data-aos="fade-right" data-aos-duration="1000">
+                        </div>
+                        <div class="offers-menu " data-aos="fade-up" data-aos-duration="1000">  
+                            <div class="offers-content d-flex">
+                                <div class="offer-text">
+                                    <a href="#">Spa & Wellness</a>
+                                </div>
+                                <div class="offer-date">
+                                    <a href="#">06 April 2023</a>
+                                </div>
+                            </div>
+                            <div class="offer-tagline">
+                                <span>Hotel June's Upcoming Artist in Residence</span>
+                            </div>
+                            <div class="read d-flex align-items-center">
+                                <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35.8 28.0924C43.3451 28.0924 49.4616 21.9759 49.4616 14.4308C49.4616 6.88577 43.3451 0.769287 35.8 0.769287C28.255 0.769287 22.1385 6.88577 22.1385 14.4308C22.1385 21.9759 28.255 28.0924 35.8 28.0924Z" stroke="#122223"></path>
+                                    <path d="M33.4808 10.2039L32.9985 10.8031L37.2931 14.2623H0.341553V15.0315H37.28L33.0008 18.4262L33.4785 19.0285L39 14.6492L33.4808 10.2039Z" fill="#122223"></path>
+                                  </svg>
+                                  <span>READ MORE</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="w-4">
+                        <div class="offers-img offers-img-s">
+                            <img src="assets/img/card/card2.png" alt="" data-aos="fade-right" data-aos-duration="1000">
+                        </div>
+                        <div class="offers-menu offers-img-s " data-aos="fade-up" data-aos-duration="1000">  
+                            <div class="offers-content d-flex">
+                                <div class="offer-text">
+                                    <a href="#">Event</a>
+                                </div>
+                                <div class="offer-date">
+                                    <a href="#">06 April 2023</a>
+                                </div>
+                            </div>
+                            <div class="offer-tagline">
+                                <span>Where to travel in 2023: 10 places you need to go in 2023!</span>
+                            </div>
+                            <div class="read d-flex align-items-center">
+                                <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35.8 28.0924C43.3451 28.0924 49.4616 21.9759 49.4616 14.4308C49.4616 6.88577 43.3451 0.769287 35.8 0.769287C28.255 0.769287 22.1385 6.88577 22.1385 14.4308C22.1385 21.9759 28.255 28.0924 35.8 28.0924Z" stroke="#122223"></path>
+                                    <path d="M33.4808 10.2039L32.9985 10.8031L37.2931 14.2623H0.341553V15.0315H37.28L33.0008 18.4262L33.4785 19.0285L39 14.6492L33.4808 10.2039Z" fill="#122223"></path>
+                                  </svg>
+                                  <span>READ MORE</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="w-4">
+                        <div class="offers-img offers-img-t">
+                            <img src="assets/img/card/card3.png" alt="" data-aos="fade-right" data-aos-duration="1000">
+                        </div>
+                        <div class="offers-menu offers-img-t " data-aos="fade-up" data-aos-duration="1000">  
+                            <div class="offers-content d-flex">
+                                <div class="offer-text">
+                                    <a href="#">Restaurant</a>
+                                </div>
+                                <div class="offer-date">
+                                    <a href="#">06 April 2023</a>
+                                </div>
+                            </div>
+                            <div class="offer-tagline">
+                                <span>Tips For Picking Vacation Accommodation!</span>
+                            </div>
+                            <div class="read d-flex align-items-center">
+                                <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35.8 28.0924C43.3451 28.0924 49.4616 21.9759 49.4616 14.4308C49.4616 6.88577 43.3451 0.769287 35.8 0.769287C28.255 0.769287 22.1385 6.88577 22.1385 14.4308C22.1385 21.9759 28.255 28.0924 35.8 28.0924Z" stroke="#122223"></path>
+                                    <path d="M33.4808 10.2039L32.9985 10.8031L37.2931 14.2623H0.341553V15.0315H37.28L33.0008 18.4262L33.4785 19.0285L39 14.6492L33.4808 10.2039Z" fill="#122223"></path>
+                                  </svg>
+                                  <span>READ MORE</span>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience -->
+        <section>
+            <div class="title">
+                <span>@SWISS-RESORT</span>
+                <h1>Follow us on <br> Instagram</h1>
+            </div>
+            <div class="experience pb-200">
+                <img src="assets/img/experience/experience1.png" class="img1" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="assets/img/experience/experience2.png" class="img2" data-aos="zoom-out" data-aos-duration="1000">
+                <img src="assets/img/experience/experience3.png" class="img1" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="assets/img/experience/experience4.png" class="img3" data-aos="zoom-out" data-aos-duration="1000">
+                <img src="assets/img/experience/experience5.png" class="img1" data-aos="zoom-in" data-aos-duration="1000">
+            </div>
+        </section>
+
+    </main>
+    <footer class="pt-100 pb-200">
+        <div class="container">
+            <div class="row">
+                <div class="w-3">
+                    <div class="heading">
+                        <h2>About Us</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Duis vitae nulla at nisl finibus pharetra <br>Nunc porttitor sapien quis euismod.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-2">
+                    <div class="heading">
+                        <h2>Contact<h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">PO Box 16122 Collins StreetWest Victoria 8007 Australia</a>
+                        </li>
+                        <li>
+                            <a href="#">info@swiss-resort.com</a>
+                        </li>
+                        <li>
+                            <a href="#">+61 3 8376 6284</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-2">
+                    <div class="heading">
+                        <h2>Links</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">About Hotel</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Rooms</a>
+                        </li>
+                        <li>
+                            <a href="#">Restaurant & Bar</a>
+                        </li>
+                        <li>
+                            <a href="#">Spa & Wellness</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-2 ml">
+                    <div class="blank"></div>
+                    <ul>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Get Directions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-3">
+                    <div class="heading">
+                        <h2>Newsletter Sign Up</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Sign up for our news, deals and special offers.</a>
+                        </li>
+                    </ul>
+                    <form action="" method="">
+                        <input type="email" name="" id="" placeholder=" Your Email Address" class="email">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        //up-button
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $(".up-button").fadeIn();
+            }
+            else {
+                $(".up-button").fadeOut();
+            }
+        });
+         //loader
+         $(window).on('load',function(){
+            $(".loader img").delay(500).fadeOut(1000);
+                $(".loader").delay(1000).fadeOut(1500);
+                    setTimeout(function() {
+                        $("body").removeClass("hidden");
+                    }, 2500);
+        });
+         //fixed header
+                $(window).scroll(function(){
+            if($(this).scrollTop() >300){
+                $(".header").addClass("fixed-header");
+            }
+            else{
+                $(".header").removeClass("fixed-header");
+            }
+        });
+    </script>
+    <script>
+        $(document)
+  .mousemove(function(e) {
+    $('.cursor div')
+      .eq(0)
+      .css({
+        left: e.pageX ,
+        top: e.pageY
+      });
+    setTimeout(function() {
+      $('.cursor div')
+        .eq(1)
+        .css({
+          left: e.pageX ,
+          top: e.pageY
+        });
+    }, 200);
+  })
+    </script>
+
+
+
+<script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

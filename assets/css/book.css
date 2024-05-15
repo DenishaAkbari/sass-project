@@ -1,0 +1,49 @@
+.title {
+  text-align: center;
+}
+
+.title span {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.title h1 {
+  font-size: 64px;
+  margin-top: 20px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.book-content {
+  padding-right: 30%;
+  font-size: 17px;
+  font-family: var(--font-jost);
+}
+
+.book-content img {
+  width: 50px;
+  height: 50px;
+}
+
+.book-img {
+  margin-left: 40px;
+}
+
+.button {
+  margin: 50px 0px;
+  vertical-align: middle;
+}
+
+.button span {
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
+.room {
+  margin-top: 30px;
+}
+
+.book-side-img img {
+  width: 670px;
+}/*# sourceMappingURL=book.css.map */

@@ -1,0 +1,87 @@
+.banner{
+    background-image: url('../img/banner/bg.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 150px;
+    .banner-content{
+        text-align: center;
+        color: var(--white);
+        padding-top: 150px;
+    }
+    .banner-content span{
+        font-family: var(--font-jost);
+        font-size: 15px;
+    }
+    .banner-content h1{
+        line-height: 1.1;
+        margin-top: 100px;
+        font-size: 92px;
+        font-weight: 100;
+        margin-bottom: 10%;
+    }
+    .banner-from{
+        margin-top: 30px;
+        background: rgba(18, 34, 35, 0.5);
+        width: 803px;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 30px;
+        padding: 20px 30px;
+        display: flex;
+        margin-left: 5%;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    .banner-from a{
+        color: var(--white);
+        font-size: 17px;
+        font-family: var(--font);
+    }
+    .banner-from i{
+        padding-left: 50px;
+    }
+    .banner-border{
+        border-left: 2px solid rgba(255, 255, 255, 0.2);
+        margin-left: 25px;
+    }
+    .rooms a{
+        padding-left: 25px;
+        font-size: 17px;
+    }
+    .rooms i{
+        padding-left: 100px;
+    }
+    .go-btn{
+        margin-left: 30px;
+    }
+    .go-btn a{
+        padding: 10px 10px;
+        background-color: var(--secondry);
+        border-radius: 50%;
+        color: var(--white-color);
+        transition: all 0.4s linear;
+    }
+    .go-btn a:hover{
+        background-color: var(--black);
+        color: var(--white  );
+    }
+}
+.up-button{
+    width: 50px;
+    height: 50px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    bottom: 20px;
+    position: fixed;
+    right: 50px;
+    z-index: 99;
+    border: 1px solid rgb(94, 120, 134,0.5);;
+}
+.up-button a i{
+    color: var(--black);
+    font-size: 20px;
+    padding: 15px 18px;
+}

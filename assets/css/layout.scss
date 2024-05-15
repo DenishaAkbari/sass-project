@@ -1,0 +1,55 @@
+.layout{
+    background-color: var(--secondry);
+    position: relative;
+    padding-top: 200px;
+    .layout-items{
+        width: 620px;
+        height: 715px;
+        background-color: transparent;
+        border: 1px solid black;
+        margin-left: 20%;
+        margin-top: 10%;
+    }  
+    .layout-img img{
+        width: 620px;
+        height: 751px;
+        margin-left: -20px;
+        margin-top: -60px;
+    }
+    .layout-side-img{
+        width: 280px;
+        height: 350px;
+        margin-left: 5%;
+        position: absolute;
+        bottom: 21%;
+        padding-top: 100px;
+    }
+    .layout-menu{
+        // text-align: center;
+        margin-top: 20%;
+        margin-left: 150px;
+    }
+    .layout-menu a{
+        display: block;
+        padding: 20px 0px;
+        color: var( --black);
+        opacity: 0.4;
+        font-size: 52px;
+        margin-left: 50px;
+    }
+    .layout-menu a:hover{
+        color: black;
+        opacity: 1;
+    }
+    .facilities img{
+        width: 50px;
+        height: 50px;
+        margin: 0px auto;
+        display: block;
+    }
+    .facilities span{
+        text-align: center;
+        display: block;
+        color: aqua;
+    }  
+}
